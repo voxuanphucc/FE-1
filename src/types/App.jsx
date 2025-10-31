@@ -1,10 +1,11 @@
 import React from 'react';
+import { BrowserRouter } from 'react-router-dom';
+import AppRouter from '../routes/index.jsx';
 
 export default function App() {
     return (
-        <div style={{ textAlign: 'center', marginTop: '50px' }}>
-            <h1>Hello React!</h1>
-            <p>Demo giao diện cơ bản đã chạy thành công </p>
-        </div>
+        <BrowserRouter>
+            <AppRouter />
+        </BrowserRouter>
     );
 }
